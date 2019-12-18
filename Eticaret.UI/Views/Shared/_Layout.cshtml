@@ -1,0 +1,42 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initinal-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+
+    <link href="~/Content/lib/boostrap/css/bootsrap.css" rel="stylesheet" />
+    <link href="~/Content/CustomCss.css" rel="stylesheet" />
+
+    @RenderSection("customStyles", false)
+
+</head>
+<body>
+    <div class="container">
+        <!-- navbar-->
+        @Html.Partial("_Navbar")
+
+        @RenderBody()
+
+
+
+    </div>
+
+    <div class="container-fluid" style="background-color:black">
+
+        <!--Footer  istersen ekle-->
+        @Html.Partial("_Footer")
+
+    </div>
+
+    <script src="~/Content/lib/jQuery/jQuery-3.3.1.js"></script>
+    <script src="~/Content/lib/boostrap/js/bootsrap.js"></script>
+
+    <script src="~/Content/CustomJs.js"></script>
+
+    @RenderSection("customScripts", false)
+
+
+
+</body>
+</html>
