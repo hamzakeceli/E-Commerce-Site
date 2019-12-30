@@ -48,16 +48,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Managements\CategoryManagement.cs" />
     <Compile Include="Database\ProjectContext.cs" />
     <Compile Include="Mapping\CategoryMapping.cs" />
     <Compile Include="Mapping\ProductMapping.cs" />
+    <Compile Include="Migrations\201912291327010_ecommerce.cs" />
+    <Compile Include="Migrations\201912291327010_ecommerce.Designer.cs">
+      <DependentUpon>201912291327010_ecommerce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Managements\ProductManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201912291327010_ecommerce.resx">
+      <DependentUpon>201912291327010_ecommerce.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{23402E5D-5784-475F-B04F-204475159833}</Project>

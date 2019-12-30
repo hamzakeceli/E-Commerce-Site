@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\Services.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\Services.pdb
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\DALL.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\Entities.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\DALL.pdb
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\DALL.dll.config
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\Entities.pdb
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\bin\Debug\de\EntityFramework.resources.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\obj\Debug\Services.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\obj\Debug\Services.csproj.CopyComplete
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\obj\Debug\Services.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Services\obj\Debug\Services.pdb
