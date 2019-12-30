@@ -32,7 +32,7 @@ namespace DALL.Database
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
-        public DbSet<Category> MyProperty { get; set; }
+        public DbSet<Category> Category { get; set; }
 
         public DbSet<Product> Product { get; set; }
 

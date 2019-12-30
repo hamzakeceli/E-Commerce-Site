@@ -1,24 +1,4 @@
-﻿@*
-    <div class="row">
-        <div class="col-3">
-            <img src="~/Content/Images/kolye1.jpg" class="prc-picture btn-block" lazy="loaded">
-
-            <div class="product-info-container"><div class="info-box"><div class="brand">Elika Silver</div> <div class="name">Mikail Meleği Model Siyah Taşlı 925 Ayar Gümüş Kolye P2053</div> <div class="ratings readonly"><div data-v-8c230636="" class="holder"><div data-v-8c230636=""><div data-v-8c230636="" class="star-w"><div data-v-8c230636="" class="empty"><div data-v-8c230636="" class="star"></div></div> <div data-v-8c230636="" class="full" style="width: 100%;"><div data-v-8c230636="" class="star"></div></div></div></div><div data-v-8c230636=""><div data-v-8c230636="" class="star-w"><div data-v-8c230636="" class="empty"><div data-v-8c230636="" class="star"></div></div> <div data-v-8c230636="" class="full" style="width: 100%;"><div data-v-8c230636="" class="star"></div></div></div></div><div data-v-8c230636=""><div data-v-8c230636="" class="star-w"><div data-v-8c230636="" class="empty"><div data-v-8c230636="" class="star"></div></div> <div data-v-8c230636="" class="full" style="width: 100%;"><div data-v-8c230636="" class="star"></div></div></div></div><div data-v-8c230636=""><div data-v-8c230636="" class="star-w"><div data-v-8c230636="" class="empty"><div data-v-8c230636="" class="star"></div></div> <div data-v-8c230636="" class="full" style="width: 100%;"><div data-v-8c230636="" class="star"></div></div></div></div><div data-v-8c230636=""><div data-v-8c230636="" class="star-w"><div data-v-8c230636="" class="empty"><div data-v-8c230636="" class="star"></div></div> <div data-v-8c230636="" class="full" style="width: 60%;"><div data-v-8c230636="" class="star"></div></div></div></div> <span data-v-8c230636="" class="ratingCount">(312)</span></div></div> <div class="price-container"><!----> <div class="sale-price">79,98 TL</div></div> <div class="discounted-price-container"><div class="promotion-text">SEPETTE %50 İNDİRİM</div> <div class="discounted-price">39,99 TL</div></div></div></div>
-        </div>
-        <div class="col-3">
-            <img src="~/Content/Images/kolye1.jpg" class="prc-picture btn-block" lazy="loaded">
-        </div>
-        <div class="col-3">
-            <img src="~/Content/Images/kolye1.jpg" class="prc-picture btn-block" lazy="loaded">
-        </div>
-        <div class="col-3">
-            <img src="~/Content/Images/kolye1.jpg" class="prc-picture btn-block" lazy="loaded">
-        </div>
-
-
-    </div>
-
-*@
+﻿
 
 <div class="row">
     <div class="col-12">
@@ -26,76 +6,88 @@
     </div>
 </div>
 
-<div class=" filtreOption" style="border:1px solid; border-color:lightgrey;">
-    <h4>Aksesuarda Tek Fiyat</h4>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+@model ProductListViewModel
 
+@if (Model.Categories.Any())
+{
+    <div class="row">
+        @foreach (Category item in Model.Categories)
+        {
+            <div class="col">
+                <div class="text-center btn btn-block btn-outline-success mb-3">
+                    @item.CategoryName
+                </div>
+            </div>
+        }
+    </div>
+}
+@*<div class=" filtreOption" style="border:1px solid; border-color:lightgrey;">
+        <h4>Aksesuarda Tek Fiyat</h4>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Cinsiyet
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Erkek</a>
-                        <a class="dropdown-item" href="#">Kadın</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Marka
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Kategori
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Beden
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Renk
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
 
 
-            </ul>
-        </div>
-    </nav>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cinsiyet
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Erkek</a>
+                            <a class="dropdown-item" href="#">Kadın</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Marka
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kategori
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Beden
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Renk
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
 
-</div>
 
+                </ul>
+            </div>
+        </nav>
 
+    </div>*@
 <div class="filtreleme">
     <p style="text-align:center"> 400 ürün listeleniyor </p>
-
-
 </div>
 
 
@@ -104,59 +96,67 @@
 
 
 
-<div>
-
+@if (Model.Products.Any())
+{
     <div class="row">
-        <div class="col-3 card border-success mb-3 text-center">
-            <div class="product-grid9">
-                <div class="product-image9 ">
-                    <a href=@Url.Action("ProductDetail", "Home")>
-                        <img src="~/Content/Images/kolye1.jpg">
 
-                    </a>
+        @foreach (Product item in Model.Products)
+        {
+            <div class="col-3 card border-success mb-3 text-center">
+                <div class="product-grid9">
+                    <div class="product-image9  btn btn-block">
+                        <a href=@Url.Action("ProductDetail", "Home")>
+                            <img src="@item.ProductImage">
 
-                </div>
-                <div class="product-content">
-                    <h3 class="card-title text-success">Title</h3>
-                    <p>İçerik burya gelecek vfmdvkfv kvmfkvm</p>
-                    <h6 class="text-danger float-left">Kategori</h6>
-                    <h6 class="float-right">50 tl</h6>
+                        </a>
 
-                </div>
-                <div class="card-footer bg-transparent border-success">
-                    <a href="#" class="btn btn-outline-success">Detay</a>
-                    <a href="#" class="btn btn-outline-success">SEpete Ekle</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="card-title text-success">@item.ProductName</h3>
+                        <p>@item.ProductDescription</p>
+                        <h6 class="text-danger float-left">@item.Category.CategoryName</h6>
+                        <h6 class="float-right">@item.ProductPrice tl</h6>
 
+                    </div>
+                    <div class="card-footer bg-transparent border-success">
+                        <a href=@Url.Action("ProductDetail", "Home") class="btn btn-outline-success">Detay</a>
+                        <a href="#" class="btn btn-outline-success">SEpete Ekle</a>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-       
+        }
         @*<div class="col-md-3 col-sm-6">
-            <div class="product-grid9">
-                <div class="product-image9">
-                    <a href="#">
-                        <img class="pic-1" src="~/Content/Images/kolye1.jpg">
-                        <img class="pic-2" src="~/Content/Images/kolye2.jpeg">
-                    </a>
-                    <a href="#" class="fa fa-search product-full-view"></a>
+                <div class="product-grid9">
+                    <div class="product-image9">
+                        <a href="#">
+                            <img class="pic-1" src="~/Content/Images/kolye1.jpg">
+                            <img class="pic-2" src="~/Content/Images/kolye2.jpeg">
+                        </a>
+                        <a href="#" class="fa fa-search product-full-view"></a>
+                    </div>
+                    <div class="product-content">
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                        </ul>
+                        <h3 class="title"><a href="#">Women's Top</a></h3>
+                        <div class="price"> $12.60 - $40.53</div>
+                        <a class="add-to-cart" href="">VIEW PRODUCTS</a>
+                    </div>
                 </div>
-                <div class="product-content">
-                    <ul class="rating">
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                        <li class="fa fa-star"></li>
-                    </ul>
-                    <h3 class="title"><a href="#">Women's Top</a></h3>
-                    <div class="price"> $12.60 - $40.53</div>
-                    <a class="add-to-cart" href="">VIEW PRODUCTS</a>
-                </div>
-            </div>
-        </div>*@
+            </div>*@
 
     </div>
 
 
-</div>
+}
+//liste null burası çalışır
+else
+{
+    <p> Aradığınız içerik bulunamadı</p>
+}

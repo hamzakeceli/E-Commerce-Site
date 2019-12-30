@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Eticaret.UI.Models;
+using Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,17 @@ namespace Eticaret.UI.Controllers
 {
     public class HomeController : Controller
     {
+
+
+        private readonly CategoryServices categoryServices;
+        private readonly ProductServices productServices;
+
+
+        public HomeController()
+        {
+            categoryServices = new CategoryServices();
+            productServices = new ProductServices();
+        }
         // GET: Home
         public ActionResult Index()
         {
@@ -15,7 +28,17 @@ namespace Eticaret.UI.Controllers
         }
         public ActionResult ProductList()
         {
-            return View();
+
+            var categories = categoryServices.GetCategories();
+            var products = productServices.GetProducts();
+
+            var productListViewModel = new ProductListViewModel
+            {
+                Categories = categories,
+                Products=products,
+            };
+
+;            return View(productListViewModel);
         }
         public ActionResult ProductDetail()
         {

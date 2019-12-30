@@ -342,3 +342,16 @@ C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\obj\Debug\Eticaret.UI
 C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\obj\Debug\Eticaret.UI.csproj.CopyComplete
 C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\obj\Debug\Eticaret.UI.dll
 C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\obj\Debug\Eticaret.UI.pdb
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\Entities.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\Services.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\DALL.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\EntityFramework.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\Entities.pdb
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\Services.pdb
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\DALL.pdb
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\DALL.dll.config
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\EntityFramework.xml
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\de\EntityFramework.resources.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Projeler\E-Commerce-Site\Eticaret.UI\bin\de\EntityFramework.SqlServer.resources.dll
